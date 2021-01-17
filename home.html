@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="paragraph">
+WELCOME TO <br>BREAKING BENJAMIN<br> SHOPPING MALL
+    </div>
+<link rel="stylesheet" href="home.css">
+  <script type="text/javascript">
+       function onSubmit() {
+            if (document.getElementById('password').value == '123' &&document.getElementById('username').value == 'ghulam') {window.location.href = 'mystore.html'; }else{ alert('Please check your passcode and try again');}
+       }
+  </script>
+
+  <fieldset><form class="hero-form" action="#">
+            <div class="row-fluid">
+                    <label>Enter your passcode</label>
+                    <input type="password" name="password" maxlength="8"      class="span7" id="password" placeholder="e.g. 12345678" required/>
+                    <label>Enter your username</label>
+                    <input type="text" name="username" maxlength="8"      class="span7" id="username" placeholder="e.g. 12345678" required/>
+
+            </div>
+  </form></fieldset>
+  <button  onclick="onSubmit()">Enter</button>
+  </body>
+</html>
